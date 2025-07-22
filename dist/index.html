@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MTA - Magic: the Arthering</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Texturina:opsz,wght@12..72,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/output.css">
+    <style>
+      html, body{
+        font-family: "Lato", sans-serif;
+      }
+      .texturina {
+        font-family: "Texturina", serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-CmjlZbmH.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+    //   function returnNextDate(finalDate) {
+    //     const crrDate = new Date(finalDate);
+    //     let lastMinute = crrDate.getMinutes();
+
+    //     if (lastMinute > 9) {
+    //         lastMinute = parseInt(('' + lastMinute)[1])
+    //     }
+
+    //     let totalMinutes = 0;
+    //     var totalSeconds = 60 - crrDate.getSeconds();
+
+    //     if (totalSeconds == 60 && (lastMinute == 0 || lastMinute == 5)) {
+    //       totalSeconds = 0;
+    //       totalSeconds = 0;
+    //     } else {
+    //       if (lastMinute >= 5) {
+    //           totalMinutes = 9 - lastMinute;
+    //       } else {
+    //           totalMinutes = 4 - lastMinute;
+    //       }
+    //       if (totalSeconds === 60) {
+    //         totalSeconds = 0;
+    //         totalMinutes++;
+    //       }
+    //     }
+
+    //     var timing = `${checkforZero(totalMinutes)}:${checkforZero(totalSeconds)}`;
+    //     // console.log(timing);
+    //     return timing;
+    // }
+
+    //     function checkforZero(n) {
+    //       return n > 9 ? n : `0${n}`;
+    //   }
+    //   function returnNextDate(currentDate, nextHour) {
+    //     const dateRef = [0, 3, 6, 9, 12, 15, 18, 21, 24];
+    //     const crrDate = new Date(currentDate);
+
+    //     const dateHour = crrDate.getHours();
+
+    //     // const value = dateRef.find(function (item) {
+    //     //     return item > dateHour;
+    //     // });
+
+    //     const value = nextHour;
+
+    //     var diffSeconds = 60 - crrDate.getSeconds();
+    //     var diffMinutes = 60 - crrDate.getMinutes();
+    //     var diffHour = value - dateHour - 1;
+
+    //     if (diffMinutes === 60 && diffSeconds === 60) {
+    //       diffMinutes = 0;
+    //     } else if (diffMinutes === 60 && diffSeconds != 60) {
+    //       diffMinutes = 60 - crrDate.getMinutes() - 1;
+    //     }
+
+
+    //     if (diffSeconds === 60) {
+    //         diffSeconds = 0;
+    //     } else {
+    //       diffMinutes = 60 - crrDate.getMinutes() - 1;
+    //     }
+
+    //     if (diffSeconds === 0 && diffMinutes === 0) {
+    //       diffHour = value - dateHour;
+    //     }
+
+    //     var timing = `${currentDate}: ${checkforZero(diffHour)}:${checkforZero(diffMinutes)}:${checkforZero(diffSeconds)}`;
+    //     console.log(timing);
+    //     return timing;
+    // }
+
+    // function checkforZero(n) {
+    //     return n > 9 ? n : `0${n}`;
+    // }
+
+    // returnNextDate('01/03/2025, 00:00:00', 24);
+    // returnNextDate('01/03/2025, 00:00:01', 24);
+    // returnNextDate('01/03/2025, 00:00:02', 24);
+    // returnNextDate('01/03/2025, 20:30:02', 24);
+    // returnNextDate('01/03/2025, 23:59:02', 24);
+    </script>
+  </body>
+</html>
