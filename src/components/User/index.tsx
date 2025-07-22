@@ -89,7 +89,9 @@ function User() {
                     </svg>
                 </button>
             </div>
-            <Modal visibility={rankingMenu} setVisibility={setRankingMenu}>oi</Modal>
+            <Modal visibility={rankingMenu} setVisibility={setRankingMenu}>
+                Cards Ranking
+            </Modal>
         </>
     )
 };

@@ -10,7 +10,7 @@ function Card({ item, sizes }: { item: CardType, sizes: string }) {
     const setCard = useCardPageStore((state) => state.setCard);
     const { cardSelect } = useContext(CardListContext);
 
-    const image = item.image_uris;
+    let image = item.image_uris;
 
     let isThisCard = false;
     let listVoted = false;
@@ -21,6 +21,10 @@ function Card({ item, sizes }: { item: CardType, sizes: string }) {
         if (cardSelect === item.id) {
             isThisCard = true;
         }
+    }
+
+    if (typeof image === 'undefined') {
+        image = item.card_faces[0].image_uris;
     }
 
     return (

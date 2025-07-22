@@ -1,6 +1,7 @@
 // Importando o módulo express para lidar com rotas e middlewares
 import express from 'express';
 import router from './card-api/route.js';
+import { schedulejSON, schedulejSON2, customGenerateJSON } from './card-api/json.js';
 
 // Inicializando a aplicação Express
 const app = express();

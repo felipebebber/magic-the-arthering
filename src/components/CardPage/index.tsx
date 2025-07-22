@@ -31,7 +31,7 @@ function CardPage() {
     }, [escFunction]);
 
     if (card !== null) {
-        const { name, type_line, released_at, artist, rarity, image_uris, flavor_text, oracle_text, mana_cost, power, toughness }: CardType = card;
+        const { name, type_line, released_at, artist, rarity, image_uris, card_faces, flavor_text, oracle_text, mana_cost, power, toughness }: CardType = card;
 
         const rarityRef = rarity !== undefined ? rarity : 'common';
         const oracleRef = oracle_text !== undefined ? oracle_text : '';
@@ -41,7 +41,7 @@ function CardPage() {
         return (
             <div className="fixed top-0 left-0 bottom-0 right-0 w-full h-full bg-black bg-opacity-90 z-20 flex items-center">
                 <div className="flex-1 h-full flex items-center justify-center relative flex-col">
-                    <ImagePreview image_uris={image_uris} flavor_text={flavor_text ? flavor_text : ''} />
+                    <ImagePreview image_uris={typeof image_uris !== 'undefined' ? image_uris : card_faces[0].image_uris} flavor_text={flavor_text ? flavor_text : ''} />
                 </div>
                 <div className={`ml-auto h-full text-slate-200 w-5/12 flex`} style={{ backgroundImage: `linear-gradient(-15deg, #002438, #340e28)` }}>
                     <div className="p-8 leading-tight flex-1 border-l border-l-slate-700">

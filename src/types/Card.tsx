@@ -6,6 +6,12 @@ type CardType = {
         normal: string,
         art_crop: string,
     },
+    card_faces: [{
+        image_uris: {
+            normal: string,
+            art_crop: string,
+        }
+    }],
     power?: string,
     toughness?: string,
     rarity?: string,
