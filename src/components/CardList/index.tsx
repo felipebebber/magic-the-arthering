@@ -21,18 +21,16 @@ function CardList({ filter, amount, sizes, visibility }: CardListType) {
     const [cardSelect, setCardSelected] = useState<null | string>(null);
 
     useEffect(() => {
-        async function getData() {
+        async function getCardData() {
             const data = await RequestCardList(filter);
 
-            if (data !== null) {
+            if (data !== false) {
                 setCards(data.cards);
-            } else if (!data) {
-                // 
             }
         }
 
         if (visibility && Cards.length === 0) {
-            getData();
+            getCardData();
         }
     }, [visibility]);
 
